@@ -1,0 +1,121 @@
+{
+  "summary": "This excerpt introduces EMIR-related guidelines that apply to financial counterparties, non-financial counterparties, trade repositories (TRs), and competent authorities. The document outlines the scope of these guidelines and defines the relevant entities as per Articles 2(2), 2(8), and 2(9) of EMIR. It also includes a list of acronyms and definitions essential for interpreting regulatory documentation in the derivatives market.",
+  "key_points": [
+    "Guidelines apply to both financial and non-financial counterparties involved in derivatives, as well as to trade repositories and competent authorities.",
+    "Definitions for these entities are grounded in specific articles of EMIR: Articles 2(8), 2(9), and 2(2).",
+    "Trade repositories are responsible for storing data on derivative transactions.",
+    "The document includes a glossary of regulatory acronyms relevant to EMIR and financial reporting."
+  ],
+  "entities": [
+    {
+      "id": "E1",
+      "name": "Guidelines",
+      "type": "regulatory document",
+      "description": "Instructions and rules under EMIR applying to market participants and oversight bodies."
+    },
+    {
+      "id": "E2",
+      "name": "Financial Counterparties",
+      "type": "entity",
+      "description": "Entities like banks and investment firms defined in Article 2(8) EMIR, involved in derivatives."
+    },
+    {
+      "id": "E3",
+      "name": "Non-Financial Counterparties",
+      "type": "entity",
+      "description": "Corporates and others defined in Article 2(9) EMIR, involved in derivatives."
+    },
+    {
+      "id": "E4",
+      "name": "Derivatives",
+      "type": "financial instrument",
+      "description": "Contracts whose value is derived from an underlying asset."
+    },
+    {
+      "id": "E5",
+      "name": "Trade Repositories (TRs)",
+      "type": "entity",
+      "description": "Entities defined in Article 2(2) EMIR that store derivative transaction records."
+    },
+    {
+      "id": "E6",
+      "name": "Competent Authorities",
+      "type": "regulatory body",
+      "description": "Supervisory bodies enforcing EMIR provisions."
+    },
+    {
+      "id": "E7",
+      "name": "EMIR",
+      "type": "regulation",
+      "description": "European Market Infrastructure Regulation providing legal framework for derivatives reporting."
+    }
+  ],
+  "relationships": [
+    {
+      "subject_id": "E1",
+      "verb": "applies to",
+      "object_id": "E2",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E1",
+      "verb": "applies to",
+      "object_id": "E3",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E1",
+      "verb": "applies to",
+      "object_id": "E5",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E1",
+      "verb": "applies to",
+      "object_id": "E6",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E7",
+      "verb": "defines",
+      "object_id": "E2",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E7",
+      "verb": "defines",
+      "object_id": "E3",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E7",
+      "verb": "defines",
+      "object_id": "E5",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E2",
+      "verb": "engages in",
+      "object_id": "E4",
+      "confidence_score": 0.95
+    },
+    {
+      "subject_id": "E3",
+      "verb": "engages in",
+      "object_id": "E4",
+      "confidence_score": 0.95
+    },
+    {
+      "subject_id": "E5",
+      "verb": "stores data on",
+      "object_id": "E4",
+      "confidence_score": 0.95
+    },
+    {
+      "subject_id": "E6",
+      "verb": "oversees/enforces",
+      "object_id": "E7",
+      "confidence_score": 0.95
+    }
+  ]
+}
