@@ -1,0 +1,92 @@
+{
+  "summary": "This excerpt outlines regulatory abbreviations and relationships within the EU financial regulatory framework, focusing on RTS for investment firms and reporting obligations under EMIR, particularly the role of ESMA and trade repositories.",
+  "key_points": [
+    "EU Delegated Regulation 2017/565 supplements Directive 2014/65/EU with technical specifications.",
+    "Regulatory Technical Standards (RTS) define detailed rules for organizational requirements for investment firms.",
+    "ESMA is responsible for developing RTS to implement regulatory directives and regulations.",
+    "Reporting requirements under EMIR mandate the submission of specific transaction data.",
+    "Trade repositories are regulated entities under EMIR responsible for collecting derivative transaction data."
+  ],
+  "entities": [
+    {
+      "id": "E1",
+      "name": "Regulatory Technical Standards",
+      "type": "regulation",
+      "description": "Technical specifications issued to support the implementation of EU regulations and directives."
+    },
+    {
+      "id": "E2",
+      "name": "EU Delegated Regulation 2017/565",
+      "type": "regulation",
+      "description": "Regulation supplementing Directive 2014/65/EU concerning organizational requirements and operating conditions for investment firms."
+    },
+    {
+      "id": "E3",
+      "name": "Directive 2014/65/EU",
+      "type": "regulation",
+      "description": "Known as MiFID II, this directive governs markets in financial instruments in the EU."
+    },
+    {
+      "id": "E4",
+      "name": "European Market Infrastructure Regulation",
+      "type": "regulation",
+      "description": "EU regulation focused on increasing transparency and reducing systemic risk in derivatives markets."
+    },
+    {
+      "id": "E5",
+      "name": "European Securities and Markets Authority",
+      "type": "organization",
+      "description": "EU regulatory authority responsible for developing RTS and implementing EMIR reporting standards."
+    },
+    {
+      "id": "E6",
+      "name": "Reporting Requirements",
+      "type": "obligation",
+      "description": "Mandatory submission of transaction data under financial regulation frameworks like EMIR."
+    },
+    {
+      "id": "E7",
+      "name": "Trade Repositories",
+      "type": "organization",
+      "description": "Entities authorized to collect and maintain data on derivatives transactions as mandated by EMIR."
+    },
+    {
+      "id": "E8",
+      "name": "Organizational Requirements",
+      "type": "obligation",
+      "description": "Structural and procedural obligations for investment firms under EU financial regulations."
+    }
+  ],
+  "relationships": [
+    {
+      "subject_id": "E2",
+      "verb": "supplements",
+      "object_id": "E3",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E1",
+      "verb": "relates to",
+      "object_id": "E8",
+      "confidence_score": 0.95
+    },
+    {
+      "subject_id": "E5",
+      "verb": "develops",
+      "object_id": "E1",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E6",
+      "verb": "falls under",
+      "object_id": "E4",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E7",
+      "verb": "subject to",
+      "object_id": "E4",
+      "confidence_score": 1.0
+    }
+  ]
+}
