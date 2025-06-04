@@ -1,121 +1,118 @@
 {
-  "summary": "This document provides a reference guide to the legislative framework underpinning EMIR reporting. It details core and supplementary regulations—including SFTR and various RTS and ITS—that define the requirements for reporting derivatives and securities financing transactions to trade repositories. The document clarifies both the legal obligations for reporting entities and the operational standards for trade repositories.",
-  "key_points": [
-    "EMIR governs the reporting of OTC derivatives and is supplemented by a range of technical standards.",
-    "SFTR amends EMIR by introducing requirements related to securities financing transactions.",
-    "Multiple RTS and ITS define specific aspects of the EMIR reporting framework: reporting, registration, data quality, and data access.",
-    "Trade repositories collect, validate, and publish transaction data from reporting counterparties."
-  ],
-  "entities": [
+  "nodes": [
     {
-      "id": "E1",
-      "name": "EMIR",
-      "type": "regulation",
-      "description": "Core EU regulation governing OTC derivatives, CCPs, and trade repositories."
+      "id": "emir",
+      "label": "EMIR (European Market Infrastructure Regulation)",
+      "description": "The core regulation governing OTC derivatives, central counterparties, and trade repositories.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting Framework"]
     },
     {
-      "id": "E2",
-      "name": "SFTR",
-      "type": "regulation",
-      "description": "Regulation enhancing transparency of securities financing transactions and amending EMIR."
+      "id": "sftr",
+      "label": "SFTR (Securities Financing Transactions Regulation)",
+      "description": "Regulation focused on transparency in securities financing transactions and reuse, amending EMIR.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting Framework"]
     },
     {
-      "id": "E3",
-      "name": "RTS on Reporting",
-      "type": "technical standard",
-      "description": "Defines minimum data fields to be reported under EMIR."
+      "id": "rts_on_reporting",
+      "label": "RTS on Reporting",
+      "description": "Regulatory Technical Standards specifying the minimum details of data reported to trade repositories.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting Framework"]
     },
     {
-      "id": "E4",
-      "name": "ITS on Reporting",
-      "type": "technical standard",
-      "description": "Defines data formats and methods for reporting under EMIR."
+      "id": "its_on_reporting",
+      "label": "ITS on Reporting",
+      "description": "Implementing Technical Standards defining the standards, formats, and methods for reporting under EMIR.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting Framework"]
     },
     {
-      "id": "E5",
-      "name": "RTS on Registration",
-      "type": "technical standard",
-      "description": "Defines requirements for registering trade repositories under EMIR."
+      "id": "rts_on_registration",
+      "label": "RTS on Registration",
+      "description": "Regulatory Technical Standards detailing the application process for trade repository registration.",
+      "type": "Regulation",
+      "themes": ["Trade Repository Operations and Data Management"]
     },
     {
-      "id": "E6",
-      "name": "RTS on Data Quality",
-      "type": "technical standard",
-      "description": "Defines procedures for data validation, reconciliation, and verification by trade repositories."
+      "id": "rts_on_data_quality",
+      "label": "RTS on Data Quality",
+      "description": "Regulatory Technical Standards specifying procedures for data reconciliation and verification between trade repositories and reporting entities.",
+      "type": "Regulation",
+      "themes": ["Trade Repository Operations and Data Management"]
     },
     {
-      "id": "E7",
-      "name": "RTS on Data Access",
-      "type": "technical standard",
-      "description": "Specifies the rules for data availability and publication by trade repositories."
+      "id": "rts_on_data_access",
+      "label": "RTS on Data Access",
+      "description": "Regulatory Technical Standards specifying the data to be published and made available by trade repositories.",
+      "type": "Regulation",
+      "themes": ["Trade Repository Operations and Data Management"]
     },
     {
-      "id": "E8",
-      "name": "Trade Repositories",
-      "type": "entity",
-      "description": "Entities collecting and maintaining records of derivatives and SFTs."
+      "id": "trade_repositories",
+      "label": "Trade Repositories",
+      "description": "Entities that centrally collect and maintain records of OTC derivatives and SFT transactions.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting Framework", "Trade Repository Operations and Data Management"]
     },
     {
-      "id": "E9",
-      "name": "Reporting Counterparties/Submitting Entities",
-      "type": "entity",
-      "description": "Entities required to submit transaction data to trade repositories under EMIR."
+      "id": "reporting_counterparties_submitting_entities",
+      "label": "Reporting Counterparties/Submitting Entities",
+      "description": "Entities obligated to report transaction data to trade repositories under EMIR.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting Framework"]
     }
   ],
-  "relationships": [
+  "edges": [
     {
-      "subject_id": "E1",
-      "verb": "is amended by",
-      "object_id": "E2",
-      "confidence_score": 1.0
+      "source": "sftr",
+      "target": "emir",
+      "label": "amends",
+      "details": "SFTR introduces transparency requirements for securities financing transactions and amends EMIR."
     },
     {
-      "subject_id": "E1",
-      "verb": "is supplemented by",
-      "object_id": "E3",
-      "confidence_score": 1.0
+      "source": "rts_on_reporting",
+      "target": "emir",
+      "label": "supplements"
     },
     {
-      "subject_id": "E1",
-      "verb": "is supplemented by",
-      "object_id": "E4",
-      "confidence_score": 1.0
+      "source": "its_on_reporting",
+      "target": "emir",
+      "label": "supplements"
     },
     {
-      "subject_id": "E1",
-      "verb": "is supplemented by",
-      "object_id": "E5",
-      "confidence_score": 1.0
+      "source": "rts_on_registration",
+      "target": "emir",
+      "label": "supplements"
     },
     {
-      "subject_id": "E1",
-      "verb": "is supplemented by",
-      "object_id": "E6",
-      "confidence_score": 1.0
+      "source": "rts_on_data_quality",
+      "target": "emir",
+      "label": "supplements"
     },
     {
-      "subject_id": "E1",
-      "verb": "is supplemented by",
-      "object_id": "E7",
-      "confidence_score": 1.0
+      "source": "rts_on_data_access",
+      "target": "emir",
+      "label": "supplements"
     },
     {
-      "subject_id": "E9",
-      "verb": "reports data to",
-      "object_id": "E8",
-      "confidence_score": 1.0
+      "source": "reporting_counterparties_submitting_entities",
+      "target": "trade_repositories",
+      "label": "report data to",
+      "details": "As mandated by EMIR and its related technical standards."
     },
     {
-      "subject_id": "E6",
-      "verb": "governs",
-      "object_id": "E8",
-      "confidence_score": 0.95
+      "source": "rts_on_data_quality",
+      "target": "trade_repositories",
+      "label": "governs",
+      "details": "Specifies procedures for data reconciliation and verification."
     },
     {
-      "subject_id": "E7",
-      "verb": "governs",
-      "object_id": "E8",
-      "confidence_score": 0.95
+      "source": "rts_on_data_access",
+      "target": "trade_repositories",
+      "label": "governs",
+      "details": "Specifies the data to be published and made available."
     }
   ]
 }
