@@ -1,0 +1,65 @@
+1. **Overall Document Summary:**
+
+These guidelines, based on Article 16(1) of ESMA’s Regulation, aim to harmonize and standardize derivatives reporting under EMIR, starting April 29, 2024.  This standardization is crucial for effective systemic risk monitoring and cost containment across the reporting chain (counterparties, trade repositories (TRs), and authorities). The guidelines clarify aspects like transitioning to the new rules, reportable derivatives, intragroup exemptions, reporting delegation, data quality, and trade state reporting.  The ultimate goal is to improve the quality of reported data used for regulatory oversight.
+
+2. **Key Entities/Concepts (Nodes):**
+
+* **Entity/Concept:** EMIR (European Market Infrastructure Regulation)
+    * **Description:** The overarching regulation governing derivatives reporting.
+* **Entity/Concept:** ESMA (European Securities and Markets Authority)
+    * **Description:** The regulatory body issuing the guidelines based on EMIR.
+* **Entity/Concept:** Guidelines
+    * **Description:** The document itself, providing clarifications on EMIR reporting.
+* **Entity/Concept:** Derivatives Reporting
+    * **Description:** The core process of reporting derivative trades to trade repositories.
+* **Entity/Concept:** Counterparties
+    * **Description:** Entities engaging in derivative transactions and responsible for reporting.
+* **Entity/Concept:** Trade Repositories (TRs)
+    * **Description:** Entities that collect and maintain records of derivative transactions.
+* **Entity/Concept:** Authorities (Article 81(3) of EMIR)
+    * **Description:** Regulatory bodies using reported data for supervisory purposes.
+* **Entity/Concept:** Systemic Risk
+    * **Description:** The risk of a widespread failure in the financial system.
+* **Entity/Concept:** Data Quality
+    * **Description:** The accuracy, completeness, and reliability of reported data.
+* **Entity/Concept:** Trade State Report
+    * **Description:** A report used for reconciliation of derivatives data by TRs.
+* **Entity/Concept:** Intragroup Derivatives Exemption
+    * **Description:**  A specific exemption from reporting requirements for certain derivatives traded within a corporate group.
+* **Entity/Concept:** Delegation of Reporting
+    * **Description:** The process by which a counterparty can assign the reporting responsibility to another entity.
+
+
+3. **Key Relationships/Interactions (Edges):**
+
+* **Relationship:** `ESMA` --(issues)--> `Guidelines`
+    * **Context/Details:** ESMA is the regulatory body responsible for creating and publishing the guidelines.
+* **Relationship:** `Guidelines` --(clarifies)--> `EMIR`
+    * **Context/Details:** The guidelines provide specific instructions and interpretations related to EMIR reporting requirements.
+* **Relationship:** `EMIR` --(regulates)--> `Derivatives Reporting`
+    * **Context/Details:** EMIR sets the legal framework for the reporting of derivative transactions.
+* **Relationship:** `Counterparties` --(report to)--> `TRs`
+    * **Context/Details:** Counterparties are obligated to submit reports of their derivative trades to trade repositories.
+* **Relationship:** `TRs` --(provide data to)--> `Authorities`
+    * **Context/Details:** Trade repositories make the reported data available to regulatory authorities for oversight.
+* **Relationship:** `Derivatives Reporting` --(mitigates)--> `Systemic Risk`
+    * **Context/Details:**  Accurate and comprehensive reporting helps authorities monitor and manage systemic risk.
+* **Relationship:** `Guidelines` --(addresses)--> `Data Quality`
+    * **Context/Details:** The guidelines emphasize the importance of data quality and provide instructions for ensuring it.
+* **Relationship:** `TRs` --(construct)--> `Trade State Report`
+    * **Context/Details:** Trade repositories are responsible for creating and maintaining the Trade State Report for reconciliation purposes.
+* **Relationship:** `Guidelines` --(defines)--> `Intragroup Derivatives Exemption`
+    * **Context/Details:** The guidelines provide specific criteria for qualifying for the intragroup exemption.
+* **Relationship:** `Guidelines` --(clarifies)--> `Delegation of Reporting`
+    * **Context/Details:** The guidelines explain the rules and responsibilities associated with delegating the reporting obligation.
+
+
+4. **Main Themes/Information Clusters:**
+
+* **Theme/Cluster Title:** Regulatory Compliance and Oversight
+    * **Summary:** This theme focuses on the regulatory framework for derivatives reporting, the roles of ESMA and other authorities, and the importance of compliance with EMIR. The guidelines aim to enhance regulatory oversight by improving data quality and standardization.
+    * **Central Entities/Concepts:** EMIR, ESMA, Guidelines, Authorities, Derivatives Reporting, Systemic Risk, Data Quality
+
+* **Theme/Cluster Title:** Reporting Process and Data Management
+    * **Summary:** This theme covers the practical aspects of derivatives reporting, including the responsibilities of counterparties and TRs, data quality requirements, and the use of the Trade State Report for reconciliation.  It also addresses specific aspects like intragroup exemptions and delegation of reporting.
+    * **Central Entities/Concepts:** Counterparties, TRs, Derivatives Reporting, Data Quality, Trade State Report, Intragroup Derivatives Exemption, Delegation of Reporting

@@ -1,0 +1,48 @@
+1. **Overall Document Summary:**
+    *   This document excerpt introduces guidelines applicable to financial and non-financial counterparties involved in derivatives, trade repositories (TRs), and competent authorities.  The guidelines are related to EMIR (European Market Infrastructure Regulation) articles concerning definitions of counterparties and TRs.  The provided text focuses on the scope of the guidelines and lists relevant acronyms and their definitions.  The scope clarifies that the guidelines pertain to entities defined within Articles 2(8), 2(9), and 2(2) of EMIR.
+
+2. **Key Entities/Concepts (Nodes):**
+    *   **Entity/Concept:** Guidelines
+        *   **Description:**  Rules and instructions applicable to participants in the derivatives market.
+    *   **Entity/Concept:** Financial Counterparties
+        *   **Description:** Entities involved in derivative transactions as defined by Article 2(8) of EMIR.
+    *   **Entity/Concept:** Non-Financial Counterparties
+        *   **Description:** Entities involved in derivative transactions as defined by Article 2(9) of EMIR.
+    *   **Entity/Concept:** Derivatives
+        *   **Description:** Financial contracts whose value is derived from an underlying asset.
+    *   **Entity/Concept:** Trade Repositories (TRs)
+        *   **Description:** Entities that centrally collect and maintain records of derivative transactions as defined by Article 2(2) of EMIR.
+    *   **Entity/Concept:** Competent Authorities
+        *   **Description:** Regulatory bodies responsible for overseeing financial markets.
+    *   **Entity/Concept:** EMIR (European Market Infrastructure Regulation)
+        *   **Description:** The European regulation that provides the legal framework for these guidelines.
+
+3. **Key Relationships/Interactions (Edges):**
+    *   **Relationship:** `Guidelines` --(applies to)--> `Financial Counterparties`
+        *   **Context/Details:** The guidelines provide rules and instructions for financial counterparties involved in derivative transactions.
+    *   **Relationship:** `Guidelines` --(applies to)--> `Non-Financial Counterparties`
+        *   **Context/Details:** The guidelines provide rules and instructions for non-financial counterparties involved in derivative transactions.
+    *   **Relationship:** `Guidelines` --(applies to)--> `Trade Repositories (TRs)`
+        *   **Context/Details:** The guidelines provide rules and instructions for trade repositories.
+    *   **Relationship:** `Guidelines` --(applies to)--> `Competent Authorities`
+        *   **Context/Details:** The guidelines provide instructions and framework for competent authorities in their oversight role.
+    *   **Relationship:** `EMIR` --(defines)--> `Financial Counterparties`
+        *   **Context/Details:** Article 2(8) of EMIR defines financial counterparties.
+    *   **Relationship:** `EMIR` --(defines)--> `Non-Financial Counterparties`
+        *   **Context/Details:** Article 2(9) of EMIR defines non-financial counterparties.
+    *   **Relationship:** `EMIR` --(defines)--> `Trade Repositories (TRs)`
+        *   **Context/Details:** Article 2(2) of EMIR defines trade repositories.
+    *   **Relationship:** `Financial Counterparties` --(engage in)--> `Derivatives`
+    *   **Relationship:** `Non-Financial Counterparties` --(engage in)--> `Derivatives`
+    *   **Relationship:** `Trade Repositories (TRs)` --(store data on)--> `Derivatives`
+    *   **Relationship:** `Competent Authorities` --(oversee/enforce)--> `EMIR`
+
+
+4. **Main Themes/Information Clusters:**
+    *   **Theme/Cluster Title:** Scope of Guidelines
+        *   **Summary:** This section defines which entities are subject to the guidelines, specifically financial and non-financial counterparties, trade repositories, and competent authorities.  These entities are defined within specific articles of EMIR.
+        *   **Central Entities/Concepts:** Guidelines, Financial Counterparties, Non-Financial Counterparties, Trade Repositories (TRs), Competent Authorities, EMIR
+
+    *   **Theme/Cluster Title:** Acronyms and Definitions
+        *   **Summary:** The document provides a list of acronyms and their corresponding definitions, which are crucial for understanding the context of the guidelines and the derivative market. These acronyms represent key organizations, standards, and concepts relevant to the regulation and reporting of derivative transactions.
+        *   **Central Entities/Concepts:**  EU, FIRDS, FSB, IOSCO, ISIN, ISO, ITS, LEI, MIC, NCA, OJ, OTC, Q&A, RSE, RTS, SWIFT, TR, UTI, XML, XSD

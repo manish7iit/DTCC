@@ -1,0 +1,45 @@
+**1. Overall Document Summary:**
+
+This document excerpt defines abbreviations related to regulatory technical standards (RTS) on organizational requirements for investment firms. It specifically references the EU Delegated Regulation 2017/565, which supplements Directive 2014/65/EU.  The provided text focuses on establishing a common understanding of terms used within the context of these regulations, particularly concerning reporting requirements under EMIR. The document provides links to consultation papers and final reports regarding technical standards on reporting, data quality, data access, and registration of trade repositories.
+
+**2. Key Entities/Concepts (Nodes):**
+
+* **Entity/Concept:** RTS (Regulatory Technical Standards)
+    * **Description:**  Specific technical standards supplementing EU directives, in this case related to organizational requirements for investment firms.
+* **Entity/Concept:** EU Delegated Regulation 2017/565
+    * **Description:**  Regulation supplementing Directive 2014/65/EU regarding organizational requirements and operating conditions for investment firms.
+* **Entity/Concept:** Directive 2014/65/EU
+    * **Description:**  EU directive concerning markets in financial instruments (MiFID II).
+* **Entity/Concept:** EMIR (European Market Infrastructure Regulation)
+    * **Description:**  Regulation aimed at increasing transparency and reducing risk in the derivatives market.
+* **Entity/Concept:** ESMA (European Securities and Markets Authority)
+    * **Description:**  EU authority responsible for financial regulation, including developing technical standards.
+* **Entity/Concept:**  Reporting Requirements
+    * **Description:**  Obligations for firms to report specific data related to financial transactions.
+* **Entity/Concept:**  Trade Repositories (TRs)
+    * **Description:**  Entities that centrally collect and maintain records of derivatives transactions.
+
+
+**3. Key Relationships/Interactions (Edges):**
+
+* **Relationship:** `EU Delegated Regulation 2017/565` --(supplements)--> `Directive 2014/65/EU`
+    * **Context/Details:** The delegated regulation provides further detail and implementation rules for the broader directive.
+* **Relationship:** `RTS` --(relates to)--> `Organizational Requirements`
+    * **Context/Details:** The RTS define the specific technical aspects of organizational requirements for investment firms.
+* **Relationship:** `ESMA` --(develops)--> `RTS`
+    * **Context/Details:** ESMA is responsible for creating the technical standards that implement the regulations.
+* **Relationship:** `Reporting Requirements` --(falls under)--> `EMIR`
+    * **Context/Details:**  The reporting requirements are a key component of the EMIR framework.
+* **Relationship:** `Trade Repositories` --(subject to)--> `EMIR`
+    * **Context/Details:** Trade repositories are regulated under EMIR.
+
+
+**4. Main Themes/Information Clusters:**
+
+* **Theme/Cluster Title:** Regulatory Framework for Investment Firms
+    * **Summary:** This cluster focuses on the legal framework governing investment firms, specifically highlighting the interplay between Directive 2014/65/EU and Delegated Regulation 2017/565.  The RTS play a crucial role in providing detailed technical specifications for organizational requirements.
+    * **Central Entities/Concepts:** Directive 2014/65/EU, EU Delegated Regulation 2017/565, RTS, Organizational Requirements
+
+* **Theme/Cluster Title:** EMIR Reporting and Data Management
+    * **Summary:** This cluster addresses the reporting requirements under EMIR, emphasizing the importance of data quality, access, and the role of trade repositories. ESMA's involvement in developing technical standards for these aspects is also highlighted.
+    * **Central Entities/Concepts:** EMIR, Reporting Requirements, ESMA, Trade Repositories

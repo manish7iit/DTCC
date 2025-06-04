@@ -1,0 +1,50 @@
+1. **Overall Document Summary:** This document outlines the legislative framework for reporting under the European Market Infrastructure Regulation (EMIR).  It lists key regulations, including EMIR itself, SFTR, and various Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) related to reporting, registration, data quality, and data access.  These regulations provide detailed requirements for reporting OTC derivatives, securities financing transactions, and other relevant data to trade repositories. The document serves as a reference guide to the relevant EU legislation governing EMIR reporting.
+
+2. **Key Entities/Concepts (Nodes):**
+
+    * **Entity/Concept:** EMIR (European Market Infrastructure Regulation)
+        * **Description:** The core regulation governing OTC derivatives, central counterparties, and trade repositories.
+    * **Entity/Concept:** SFTR (Securities Financing Transactions Regulation)
+        * **Description:** Regulation focused on transparency in securities financing transactions and reuse, amending EMIR.
+    * **Entity/Concept:** RTS on Reporting
+        * **Description:** Regulatory Technical Standards specifying the minimum details of data reported to trade repositories.
+    * **Entity/Concept:** ITS on Reporting
+        * **Description:** Implementing Technical Standards defining the standards, formats, and methods for reporting under EMIR.
+    * **Entity/Concept:** RTS on Registration
+        * **Description:** Regulatory Technical Standards detailing the application process for trade repository registration.
+    * **Entity/Concept:** RTS on Data Quality
+        * **Description:** Regulatory Technical Standards specifying procedures for data reconciliation and verification between trade repositories and reporting entities.
+    * **Entity/Concept:** RTS on Data Access
+        * **Description:** Regulatory Technical Standards specifying the data to be published and made available by trade repositories.
+    * **Entity/Concept:** Trade Repositories
+        * **Description:** Entities that centrally collect and maintain records of OTC derivatives and SFT transactions.
+    * **Entity/Concept:** Reporting Counterparties/Submitting Entities
+        * **Description:** Entities obligated to report transaction data to trade repositories under EMIR.
+
+
+3. **Key Relationships/Interactions (Edges):**
+
+    * **Relationship:** `EMIR` --(is amended by)--> `SFTR`
+        * **Context/Details:** SFTR introduces transparency requirements for securities financing transactions and amends EMIR.
+    * **Relationship:** `EMIR` --(is supplemented by)--> `RTS on Reporting`
+    * **Relationship:** `EMIR` --(is supplemented by)--> `ITS on Reporting`
+    * **Relationship:** `EMIR` --(is supplemented by)--> `RTS on Registration`
+    * **Relationship:** `EMIR` --(is supplemented by)--> `RTS on Data Quality`
+    * **Relationship:** `EMIR` --(is supplemented by)--> `RTS on Data Access`
+    * **Relationship:** `Reporting Counterparties/Submitting Entities` --(report data to)--> `Trade Repositories`
+        * **Context/Details:**  As mandated by EMIR and its related technical standards.
+    * **Relationship:** `RTS on Data Quality` --(governs)--> `Trade Repositories`
+        * **Context/Details:**  Specifies procedures for data reconciliation and verification.
+    * **Relationship:** `RTS on Data Access` --(governs)--> `Trade Repositories`
+        * **Context/Details:** Specifies the data to be published and made available.
+
+
+4. **Main Themes/Information Clusters:**
+
+    * **Theme/Cluster Title:** EMIR Reporting Framework
+        * **Summary:** This cluster focuses on the overall regulatory framework for reporting under EMIR, including the main regulation and its supplementary technical standards.  It establishes the requirements for reporting data to trade repositories.
+        * **Central Entities/Concepts:** EMIR, SFTR, RTS on Reporting, ITS on Reporting, Trade Repositories, Reporting Counterparties/Submitting Entities
+
+    * **Theme/Cluster Title:** Trade Repository Operations and Data Management
+        * **Summary:** This cluster addresses the operational aspects of trade repositories, including registration, data quality management, and data access provisions. It outlines the rules and procedures governing the collection, validation, and dissemination of data.
+        * **Central Entities/Concepts:** Trade Repositories, RTS on Registration, RTS on Data Quality, RTS on Data Access

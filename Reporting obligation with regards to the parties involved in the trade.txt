@@ -1,0 +1,66 @@
+1. **Overall Document Summary:** This document outlines reporting obligations for derivative contracts, particularly those involving crypto-assets, under the European Market Infrastructure Regulation (EMIR) and Securities Financing Transactions Regulation (SFTR).  It clarifies which financial instruments are considered derivatives and thus reportable, including specific cases like total return swaps, complex contracts, and intragroup transactions.  The document also specifies which transactions, such as those with embedded derivatives and securitized derivatives, are not reportable under EMIR.  Finally, it clarifies reporting responsibilities for different counterparty types and scenarios.
+
+2. **Key Entities/Concepts (Nodes):**
+
+    * **Entity/Concept:** Derivatives
+        * **Description:** Financial contracts whose value is derived from an underlying asset and are subject to reporting regulations.
+    * **Entity/Concept:** Crypto-Assets
+        * **Description:** Digital assets that can serve as underlying assets for derivatives.
+    * **Entity/Concept:** EMIR (European Market Infrastructure Regulation)
+        * **Description:** The primary regulation governing the reporting of derivative contracts.
+    * **Entity/Concept:** SFTR (Securities Financing Transactions Regulation)
+        * **Description:** Regulation covering securities financing transactions, including some aspects of total return swaps.
+    * **Entity/Concept:** MiFID (Markets in Financial Instruments Directive)
+        * **Description:**  A regulatory framework that determines whether certain crypto-asset derivatives are considered financial instruments.
+    * **Entity/Concept:** Total Return Swaps (TRS)
+        * **Description:** A type of derivative contract where one party transfers the total economic performance of a reference obligation to another party.
+    * **Entity/Concept:** Complex Contracts (Options on Futures, Multi-Leg Derivatives)
+        * **Description:** Derivative contracts with multiple components or stages that require specific reporting considerations.
+    * **Entity/Concept:** Intragroup Derivatives
+        * **Description:** Derivative contracts between entities within the same group, subject to potential exemptions.
+    * **Entity/Concept:** Financial Counterparties (FC)
+        * **Description:** Entities classified as financial institutions under EMIR, obligated to report derivatives.
+    * **Entity/Concept:** Non-Financial Counterparties (NFC)
+        * **Description:** Entities not classified as financial institutions, also obligated to report derivatives under certain conditions.
+    * **Entity/Concept:** CCPs (Central Counterparties)
+        * **Description:** Entities that act as intermediaries in derivative transactions and are obligated to report them.
+    * **Entity/Concept:** Non-Reportable Transactions (Embedded Derivatives, Structured Products, Securitized Derivatives)
+        * **Description:** Specific financial instruments that are not considered derivatives under EMIR and are therefore exempt from reporting.
+
+
+3. **Key Relationships/Interactions (Edges):**
+
+    * **Relationship:** `EMIR` --(regulates)--> `Derivatives`
+        * **Context/Details:** EMIR mandates the reporting of derivative contracts.
+    * **Relationship:** `SFTR` --(regulates)--> `TRS`
+        * **Context/Details:** SFTR covers certain aspects of total return swaps, particularly transparency requirements.
+    * **Relationship:** `MiFID` --(classifies)--> `Crypto-Asset Derivatives`
+        * **Context/Details:** MiFID determines whether a derivative on a crypto-asset is considered a financial instrument and therefore reportable under EMIR.
+    * **Relationship:** `Crypto-Assets` --(underlies)--> `Derivatives`
+        * **Context/Details:** Crypto-assets can be the underlying asset for derivative contracts.
+    * **Relationship:** `Complex Contracts` --(composed of)--> `Derivatives`
+        * **Context/Details:** Complex contracts can involve multiple derivative components.
+    * **Relationship:** `EMIR` --(exempts)--> `Non-Reportable Transactions`
+        * **Context/Details:**  EMIR specifically excludes certain financial instruments, like embedded derivatives and securitized derivatives, from reporting requirements.
+    * **Relationship:** `EMIR` --(obligates reporting by)--> `FC`
+    * **Relationship:** `EMIR` --(obligates reporting by)--> `NFC`
+    * **Relationship:** `EMIR` --(obligates reporting by)--> `CCPs`
+    * **Relationship:** `EMIR` --(provides exemption for)--> `Intragroup Derivatives`
+        * **Context/Details:** Under certain conditions, intragroup derivatives are exempt from EMIR reporting.
+
+
+4. **Main Themes/Information Clusters:**
+
+    * **Theme/Cluster Title:** EMIR Reporting Obligations
+        * **Summary:** This cluster focuses on the general requirements for reporting derivatives under EMIR, including the types of derivatives covered and the responsibilities of different counterparties. It also highlights the specific case of crypto-asset derivatives and their classification under MiFID.
+        * **Central Entities/Concepts:** Derivatives, EMIR, Crypto-Assets, MiFID, FC, NFC, CCPs
+
+    * **Theme/Cluster Title:** Specific Derivative Types and Reporting
+        * **Summary:** This cluster addresses the reporting requirements for specific types of derivatives, including total return swaps and complex contracts. It clarifies how these contracts should be reported based on their structure and underlying assets.
+        * **Central Entities/Concepts:** Total Return Swaps (TRS), Complex Contracts, SFTR, Derivatives
+
+    * **Theme/Cluster Title:** Exemptions from EMIR Reporting
+        * **Summary:** This cluster outlines the specific financial instruments and scenarios that are exempt from EMIR reporting requirements. This includes transactions with embedded derivatives, structured products, securitized derivatives, and certain intragroup transactions.
+        * **Central Entities/Concepts:** Non-Reportable Transactions, Intragroup Derivatives, EMIR
+
+
