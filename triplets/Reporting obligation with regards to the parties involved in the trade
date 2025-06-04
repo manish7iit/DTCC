@@ -1,146 +1,147 @@
 {
-  "summary": "This document outlines the regulatory reporting requirements under EMIR and SFTR for derivatives, including those based on crypto-assets. It clarifies which instruments and counterparties are subject to or exempt from reporting, the role of MiFID in classification, and special cases like total return swaps, complex contracts, and intragroup transactions.",
-  "key_points": [
-    "EMIR requires the reporting of most derivative contracts, including those involving crypto-assets if classified as financial instruments under MiFID.",
-    "SFTR regulates specific securities financing transactions, including some total return swaps.",
-    "Crypto-assets can underlie derivatives, which may or may not be reportable depending on classification under MiFID.",
-    "Certain transactions, like embedded derivatives and securitized products, are exempt from EMIR reporting.",
-    "Both financial (FC), non-financial (NFC), and central counterparties (CCPs) have defined reporting obligations under EMIR, though intragroup trades may be exempt."
-  ],
-  "entities": [
+  "nodes": [
     {
-      "id": "E1",
-      "name": "Derivatives",
-      "type": "financial instrument",
-      "description": "Contracts that derive value from underlying assets and are subject to EMIR reporting."
+      "id": "derivatives",
+      "label": "Derivatives",
+      "description": "Financial contracts whose value is derived from an underlying asset and are subject to reporting regulations.",
+      "type": "Concept",
+      "themes": ["EMIR Reporting Obligations", "Specific Derivative Types and Reporting"]
     },
     {
-      "id": "E2",
-      "name": "Crypto-Assets",
-      "type": "digital asset",
-      "description": "Digital representations of value that can be used as underlying assets in derivatives."
+      "id": "crypto_assets",
+      "label": "Crypto-Assets",
+      "description": "Digital assets that can serve as underlying assets for derivatives.",
+      "type": "Concept",
+      "themes": ["EMIR Reporting Obligations"]
     },
     {
-      "id": "E3",
-      "name": "EMIR",
-      "type": "regulation",
-      "description": "European Market Infrastructure Regulation governing derivatives reporting and risk mitigation."
+      "id": "emir",
+      "label": "EMIR (European Market Infrastructure Regulation)",
+      "description": "The primary regulation governing the reporting of derivative contracts.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting Obligations", "Exemptions from EMIR Reporting"]
     },
     {
-      "id": "E4",
-      "name": "SFTR",
-      "type": "regulation",
-      "description": "Regulation covering securities financing transactions, including transparency rules for TRS."
+      "id": "sftr",
+      "label": "SFTR (Securities Financing Transactions Regulation)",
+      "description": "Regulation covering securities financing transactions, including some aspects of total return swaps.",
+      "type": "Regulation",
+      "themes": ["Specific Derivative Types and Reporting"]
     },
     {
-      "id": "E5",
-      "name": "MiFID",
-      "type": "directive",
-      "description": "Directive determining whether a crypto-asset derivative qualifies as a financial instrument."
+      "id": "mifid",
+      "label": "MiFID (Markets in Financial Instruments Directive)",
+      "description": "A regulatory framework that determines whether certain crypto-asset derivatives are considered financial instruments.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting Obligations"]
     },
     {
-      "id": "E6",
-      "name": "Total Return Swaps (TRS)",
-      "type": "derivative",
-      "description": "Contracts where the total return of a reference asset is exchanged between parties."
+      "id": "total_return_swaps",
+      "label": "Total Return Swaps (TRS)",
+      "description": "A type of derivative contract where one party transfers the total economic performance of a reference obligation to another party.",
+      "type": "Concept",
+      "themes": ["Specific Derivative Types and Reporting"]
     },
     {
-      "id": "E7",
-      "name": "Complex Contracts",
-      "type": "derivative",
-      "description": "Contracts such as options on futures or multi-leg strategies requiring nuanced reporting."
+      "id": "complex_contracts",
+      "label": "Complex Contracts (Options on Futures, Multi-Leg Derivatives)",
+      "description": "Derivative contracts with multiple components or stages that require specific reporting considerations.",
+      "type": "Concept",
+      "themes": ["Specific Derivative Types and Reporting"]
     },
     {
-      "id": "E8",
-      "name": "Intragroup Derivatives",
-      "type": "transaction",
-      "description": "Derivatives traded between entities in the same corporate group, potentially exempt from EMIR."
+      "id": "intragroup_derivatives",
+      "label": "Intragroup Derivatives",
+      "description": "Derivative contracts between entities within the same group, subject to potential exemptions.",
+      "type": "Concept",
+      "themes": ["Exemptions from EMIR Reporting"]
     },
     {
-      "id": "E9",
-      "name": "Financial Counterparties (FC)",
-      "type": "entity",
-      "description": "Financial institutions obligated to report under EMIR."
+      "id": "financial_counterparties",
+      "label": "Financial Counterparties (FC)",
+      "description": "Entities classified as financial institutions under EMIR, obligated to report derivatives.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting Obligations"]
     },
     {
-      "id": "E10",
-      "name": "Non-Financial Counterparties (NFC)",
-      "type": "entity",
-      "description": "Non-financial entities that must report derivatives under certain thresholds."
+      "id": "non_financial_counterparties",
+      "label": "Non-Financial Counterparties (NFC)",
+      "description": "Entities not classified as financial institutions, also obligated to report derivatives under certain conditions.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting Obligations"]
     },
     {
-      "id": "E11",
-      "name": "CCPs",
-      "type": "entity",
-      "description": "Central counterparties that act as intermediaries and are obligated reporters under EMIR."
+      "id": "ccps",
+      "label": "CCPs (Central Counterparties)",
+      "description": "Entities that act as intermediaries in derivative transactions and are obligated to report them.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting Obligations"]
     },
     {
-      "id": "E12",
-      "name": "Non-Reportable Transactions",
-      "type": "exemption category",
-      "description": "Instruments like embedded or securitized derivatives excluded from EMIR reporting."
+      "id": "non_reportable_transactions",
+      "label": "Non-Reportable Transactions (Embedded Derivatives, Structured Products, Securitized Derivatives)",
+      "description": "Specific financial instruments that are not considered derivatives under EMIR and are therefore exempt from reporting.",
+      "type": "Concept",
+      "themes": ["Exemptions from EMIR Reporting"]
     }
   ],
-  "relationships": [
+  "edges": [
     {
-      "subject_id": "E3",
-      "verb": "regulates",
-      "object_id": "E1",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "derivatives",
+      "label": "regulates",
+      "details": "EMIR mandates the reporting of derivative contracts."
     },
     {
-      "subject_id": "E4",
-      "verb": "regulates",
-      "object_id": "E6",
-      "confidence_score": 1.0
+      "source": "sftr",
+      "target": "total_return_swaps",
+      "label": "regulates",
+      "details": "SFTR covers certain aspects of total return swaps, particularly transparency requirements."
     },
     {
-      "subject_id": "E5",
-      "verb": "classifies",
-      "object_id": "E2",
-      "confidence_score": 0.95
+      "source": "mifid",
+      "target": "crypto_assets",
+      "label": "classifies",
+      "details": "MiFID determines whether a derivative on a crypto-asset is considered a financial instrument and therefore reportable under EMIR."
     },
     {
-      "subject_id": "E2",
-      "verb": "underlies",
-      "object_id": "E1",
-      "confidence_score": 0.9
+      "source": "crypto_assets",
+      "target": "derivatives",
+      "label": "underlies",
+      "details": "Crypto-assets can be the underlying asset for derivative contracts."
     },
     {
-      "subject_id": "E7",
-      "verb": "composed of",
-      "object_id": "E1",
-      "confidence_score": 0.9
+      "source": "complex_contracts",
+      "target": "derivatives",
+      "label": "composed of",
+      "details": "Complex contracts can involve multiple derivative components."
     },
     {
-      "subject_id": "E3",
-      "verb": "exempts",
-      "object_id": "E12",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "non_reportable_transactions",
+      "label": "exempts",
+      "details": "EMIR specifically excludes certain financial instruments, like embedded derivatives and securitized derivatives, from reporting requirements."
     },
     {
-      "subject_id": "E3",
-      "verb": "obligates reporting by",
-      "object_id": "E9",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "financial_counterparties",
+      "label": "obligates reporting by"
     },
     {
-      "subject_id": "E3",
-      "verb": "obligates reporting by",
-      "object_id": "E10",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "non_financial_counterparties",
+      "label": "obligates reporting by"
     },
     {
-      "subject_id": "E3",
-      "verb": "obligates reporting by",
-      "object_id": "E11",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "ccps",
+      "label": "obligates reporting by"
     },
     {
-      "subject_id": "E3",
-      "verb": "provides exemption for",
-      "object_id": "E8",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "intragroup_derivatives",
+      "label": "provides exemption for",
+      "details": "Under certain conditions, intragroup derivatives are exempt from EMIR reporting."
     }
   ]
 }
