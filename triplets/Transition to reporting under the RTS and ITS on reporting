@@ -1,148 +1,150 @@
 {
-  "summary": "These ESMA guidelines, effective from April 29, 2024, clarify and standardize the requirements for derivatives reporting under EMIR to improve systemic risk monitoring and data quality.",
-  "key_points": [
-    "Guidelines issued by ESMA provide clarifications on derivatives reporting under EMIR.",
-    "Standardization of reporting is required across counterparties, trade repositories, and authorities.",
-    "Counterparties must report derivative transactions to trade repositories.",
-    "Trade repositories are responsible for constructing Trade State Reports and providing data to authorities.",
-    "The guidelines define conditions for intragroup derivative exemptions.",
-    "The process of delegating reporting responsibilities is clarified in the guidelines.",
-    "Improved data quality is a central objective to support effective regulatory oversight."
-  ],
-  "entities": [
+  "nodes": [
     {
-      "id": "E1",
-      "name": "European Market Infrastructure Regulation",
-      "type": "regulation",
-      "description": "The overarching regulation governing derivatives reporting in the EU."
+      "id": "emir",
+      "label": "EMIR (European Market Infrastructure Regulation)",
+      "description": "The overarching regulation governing derivatives reporting.",
+      "type": "Regulation",
+      "themes": ["Regulatory Compliance and Oversight"]
     },
     {
-      "id": "E2",
-      "name": "European Securities and Markets Authority",
-      "type": "organization",
-      "description": "The regulatory authority that issued the guidelines under EMIR."
+      "id": "esma",
+      "label": "ESMA (European Securities and Markets Authority)",
+      "description": "The regulatory body issuing the guidelines based on EMIR.",
+      "type": "Organization",
+      "themes": ["Regulatory Compliance and Oversight"]
     },
     {
-      "id": "E3",
-      "name": "Guidelines",
-      "type": "regulation",
-      "description": "Clarifying document based on EMIR that standardizes reporting rules starting April 29, 2024."
+      "id": "guidelines",
+      "label": "Guidelines",
+      "description": "The document itself, providing clarifications on EMIR reporting.",
+      "type": "Document",
+      "themes": ["Regulatory Compliance and Oversight"]
     },
     {
-      "id": "E4",
-      "name": "Derivatives Reporting",
-      "type": "process",
-      "description": "The process of reporting derivative trades to trade repositories for regulatory purposes."
+      "id": "derivatives_reporting",
+      "label": "Derivatives Reporting",
+      "description": "The core process of reporting derivative trades to trade repositories.",
+      "type": "Process",
+      "themes": ["Regulatory Compliance and Oversight", "Reporting Process and Data Management"]
     },
     {
-      "id": "E5",
-      "name": "Counterparties",
-      "type": "organization",
-      "description": "Entities entering derivative transactions and responsible for submitting reports."
+      "id": "counterparties",
+      "label": "Counterparties",
+      "description": "Entities engaging in derivative transactions and responsible for reporting.",
+      "type": "Organization",
+      "themes": ["Reporting Process and Data Management"]
     },
     {
-      "id": "E6",
-      "name": "Trade Repositories",
-      "type": "organization",
-      "description": "Entities responsible for collecting, maintaining, and reconciling derivatives data."
+      "id": "trade_repositories",
+      "label": "Trade Repositories (TRs)",
+      "description": "Entities that collect and maintain records of derivative transactions.",
+      "type": "Organization",
+      "themes": ["Reporting Process and Data Management"]
     },
     {
-      "id": "E7",
-      "name": "Authorities",
-      "type": "organization",
-      "description": "Regulatory bodies that receive and utilize derivatives data for oversight purposes."
+      "id": "authorities",
+      "label": "Authorities (Article 81(3) of EMIR)",
+      "description": "Regulatory bodies using reported data for supervisory purposes.",
+      "type": "Organization",
+      "themes": ["Regulatory Compliance and Oversight"]
     },
     {
-      "id": "E8",
-      "name": "Systemic Risk",
-      "type": "asset",
-      "description": "Risk of a collapse in the financial system that effective derivatives reporting aims to mitigate."
+      "id": "systemic_risk",
+      "label": "Systemic Risk",
+      "description": "The risk of a widespread failure in the financial system.",
+      "type": "Concept",
+      "themes": ["Regulatory Compliance and Oversight"]
     },
     {
-      "id": "E9",
-      "name": "Data Quality",
-      "type": "asset",
-      "description": "The accuracy, completeness, and reliability of reported derivatives data."
+      "id": "data_quality",
+      "label": "Data Quality",
+      "description": "The accuracy, completeness, and reliability of reported data.",
+      "type": "Concept",
+      "themes": ["Regulatory Compliance and Oversight", "Reporting Process and Data Management"]
     },
     {
-      "id": "E10",
-      "name": "Trade State Report",
-      "type": "instrument",
-      "description": "A reconciliation tool prepared by trade repositories to track the state of trades."
+      "id": "trade_state_report",
+      "label": "Trade State Report",
+      "description": "A report used for reconciliation of derivatives data by TRs.",
+      "type": "Document",
+      "themes": ["Reporting Process and Data Management"]
     },
     {
-      "id": "E11",
-      "name": "Intragroup Derivatives Exemption",
-      "type": "obligation",
-      "description": "An exemption from reporting requirements for certain intragroup derivative trades."
+      "id": "intragroup_derivatives_exemption",
+      "label": "Intragroup Derivatives Exemption",
+      "description": "A specific exemption from reporting requirements for certain derivatives traded within a corporate group.",
+      "type": "Concept",
+      "themes": ["Reporting Process and Data Management"]
     },
     {
-      "id": "E12",
-      "name": "Delegation of Reporting",
-      "type": "process",
-      "description": "A procedure allowing counterparties to assign reporting obligations to other entities."
+      "id": "delegation_of_reporting",
+      "label": "Delegation of Reporting",
+      "description": "The process by which a counterparty can assign the reporting responsibility to another entity.",
+      "type": "Process",
+      "themes": ["Reporting Process and Data Management"]
     }
   ],
-  "relationships": [
+  "edges": [
     {
-      "subject_id": "E2",
-      "verb": "issues",
-      "object_id": "E3",
-      "confidence_score": 1.0
+      "source": "esma",
+      "target": "guidelines",
+      "label": "issues",
+      "details": "ESMA is the regulatory body responsible for creating and publishing the guidelines."
     },
     {
-      "subject_id": "E3",
-      "verb": "clarifies",
-      "object_id": "E1",
-      "confidence_score": 1.0
+      "source": "guidelines",
+      "target": "emir",
+      "label": "clarifies",
+      "details": "The guidelines provide specific instructions and interpretations related to EMIR reporting requirements."
     },
     {
-      "subject_id": "E1",
-      "verb": "regulates",
-      "object_id": "E4",
-      "confidence_score": 1.0
+      "source": "emir",
+      "target": "derivatives_reporting",
+      "label": "regulates",
+      "details": "EMIR sets the legal framework for the reporting of derivative transactions."
     },
     {
-      "subject_id": "E5",
-      "verb": "report to",
-      "object_id": "E6",
-      "confidence_score": 1.0
+      "source": "counterparties",
+      "target": "trade_repositories",
+      "label": "report to",
+      "details": "Counterparties are obligated to submit reports of their derivative trades to trade repositories."
     },
     {
-      "subject_id": "E6",
-      "verb": "provide data to",
-      "object_id": "E7",
-      "confidence_score": 1.0
+      "source": "trade_repositories",
+      "target": "authorities",
+      "label": "provide data to",
+      "details": "Trade repositories make the reported data available to regulatory authorities for oversight."
     },
     {
-      "subject_id": "E4",
-      "verb": "mitigates",
-      "object_id": "E8",
-      "confidence_score": 0.9
+      "source": "derivatives_reporting",
+      "target": "systemic_risk",
+      "label": "mitigates",
+      "details": "Accurate and comprehensive reporting helps authorities monitor and manage systemic risk."
     },
     {
-      "subject_id": "E3",
-      "verb": "addresses",
-      "object_id": "E9",
-      "confidence_score": 1.0
+      "source": "guidelines",
+      "target": "data_quality",
+      "label": "addresses",
+      "details": "The guidelines emphasize the importance of data quality and provide instructions for ensuring it."
     },
     {
-      "subject_id": "E6",
-      "verb": "construct",
-      "object_id": "E10",
-      "confidence_score": 1.0
+      "source": "trade_repositories",
+      "target": "trade_state_report",
+      "label": "construct",
+      "details": "Trade repositories are responsible for creating and maintaining the Trade State Report for reconciliation purposes."
     },
     {
-      "subject_id": "E3",
-      "verb": "defines",
-      "object_id": "E11",
-      "confidence_score": 0.95
+      "source": "guidelines",
+      "target": "intragroup_derivatives_exemption",
+      "label": "defines",
+      "details": "The guidelines provide specific criteria for qualifying for the intragroup exemption."
     },
     {
-      "subject_id": "E3",
-      "verb": "clarifies",
-      "object_id": "E12",
-      "confidence_score": 0.95
+      "source": "guidelines",
+      "target": "delegation_of_reporting",
+      "label": "clarifies",
+      "details": "The guidelines explain the rules and responsibilities associated with delegating the reporting obligation."
     }
   ]
 }
