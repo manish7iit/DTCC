@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "rts",
+      "label": "RTS (Regulatory Technical Standards)",
+      "description": "Specific technical standards supplementing EU directives, in this case related to organizational requirements for investment firms.",
+      "type": "Regulation",
+      "themes": ["Regulatory Framework for Investment Firms"]
+    },
+    {
+      "id": "eu_delegated_regulation_2017_565",
+      "label": "EU Delegated Regulation 2017/565",
+      "description": "Regulation supplementing Directive 2014/65/EU regarding organizational requirements and operating conditions for investment firms.",
+      "type": "Regulation",
+      "themes": ["Regulatory Framework for Investment Firms"]
+    },
+    {
+      "id": "directive_2014_65_eu",
+      "label": "Directive 2014/65/EU",
+      "description": "EU directive concerning markets in financial instruments (MiFID II).",
+      "type": "Regulation",
+      "themes": ["Regulatory Framework for Investment Firms"]
+    },
+    {
+      "id": "emir",
+      "label": "EMIR (European Market Infrastructure Regulation)",
+      "description": "Regulation aimed at increasing transparency and reducing risk in the derivatives market.",
+      "type": "Regulation",
+      "themes": ["EMIR Reporting and Data Management"]
+    },
+    {
+      "id": "esma",
+      "label": "ESMA (European Securities and Markets Authority)",
+      "description": "EU authority responsible for financial regulation, including developing technical standards.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting and Data Management"]
+    },
+    {
+      "id": "reporting_requirements",
+      "label": "Reporting Requirements",
+      "description": "Obligations for firms to report specific data related to financial transactions.",
+      "type": "Process",
+      "themes": ["EMIR Reporting and Data Management"]
+    },
+    {
+      "id": "trade_repositories",
+      "label": "Trade Repositories (TRs)",
+      "description": "Entities that centrally collect and maintain records of derivatives transactions.",
+      "type": "Organization",
+      "themes": ["EMIR Reporting and Data Management"]
+    },
+    {
+      "id": "organizational_requirements",
+      "label": "Organizational Requirements",
+      "description": "Requirements related to the internal structure and governance of investment firms, as specified in regulatory technical standards.",
+      "type": "Concept",
+      "themes": ["Regulatory Framework for Investment Firms"]
+    }
+  ],
+  "edges": [
+    {
+      "source": "eu_delegated_regulation_2017_565",
+      "target": "directive_2014_65_eu",
+      "label": "supplements",
+      "details": "The delegated regulation provides further detail and implementation rules for the broader directive."
+    },
+    {
+      "source": "rts",
+      "target": "organizational_requirements",
+      "label": "relates to",
+      "details": "The RTS define the specific technical aspects of organizational requirements for investment firms."
+    },
+    {
+      "source": "esma",
+      "target": "rts",
+      "label": "develops",
+      "details": "ESMA is responsible for creating the technical standards that implement the regulations."
+    },
+    {
+      "source": "reporting_requirements",
+      "target": "emir",
+      "label": "falls under",
+      "details": "The reporting requirements are a key component of the EMIR framework."
+    },
+    {
+      "source": "trade_repositories",
+      "target": "emir",
+      "label": "subject to",
+      "details": "Trade repositories are regulated under EMIR."
+    }
+  ]
+}
