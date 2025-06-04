@@ -1,0 +1,184 @@
+{
+ "summary": "This document outlines reporting requirements for derivatives under updated Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS), requiring all counterparties to update outstanding derivatives within 180 days of the reporting start date using specific report types.",
+ "key_points": [
+   "All counterparties must update outstanding derivatives to comply with new RTS and ITS standards within 180 days",
+   "Compliance must be achieved through 'Update', 'Modify', or 'Correct' report submissions",
+   "Derivatives modified or terminated after the start date must adhere to new rules regardless of origination date",
+   "The document addresses specific scenarios including collateral updates and handling of trade-level vs position-level derivatives",
+   "Three distinct report types serve different functions: Update brings derivatives into compliance, Modify communicates changes, and Correct rectifies errors",
+   "Outstanding derivatives are those active or unresolved as of the reporting start date",
+   "Both individual derivative transactions and aggregated positions are subject to these requirements"
+ ],
+ "entities": [
+   {
+     "id": "E1",
+     "name": "Reporting Counterparties",
+     "type": "organization",
+     "description": "Entities obligated to report derivative transactions according to RTS and ITS"
+   },
+   {
+     "id": "E2",
+     "name": "RTS",
+     "type": "regulation",
+     "description": "Regulatory Technical Standards defining detailed requirements for reporting derivatives"
+   },
+   {
+     "id": "E3",
+     "name": "ITS",
+     "type": "regulation",
+     "description": "Implementing Technical Standards providing technical implementation for derivative reporting"
+   },
+   {
+     "id": "E4",
+     "name": "Derivatives",
+     "type": "instrument",
+     "description": "Financial contracts whose value is derived from an underlying asset, subject to reporting requirements"
+   },
+   {
+     "id": "E5",
+     "name": "Reporting Start Date",
+     "type": "process",
+     "description": "The date on which new reporting requirements under RTS and ITS become effective"
+   },
+   {
+     "id": "E6",
+     "name": "180-Day Transition Period",
+     "type": "process",
+     "description": "Period after reporting start date during which counterparties must update outstanding derivatives"
+   },
+   {
+     "id": "E7",
+     "name": "Update Report",
+     "type": "process",
+     "description": "Report type used to bring outstanding derivatives into compliance with new reporting requirements"
+   },
+   {
+     "id": "E8",
+     "name": "Modify Report",
+     "type": "process",
+     "description": "Report type used to communicate changes to the details of a derivative trade"
+   },
+   {
+     "id": "E9",
+     "name": "Correct Report",
+     "type": "process",
+     "description": "Report type used to rectify errors in previously reported derivative data"
+   },
+   {
+     "id": "E10",
+     "name": "Outstanding Derivatives",
+     "type": "instrument",
+     "description": "Derivatives that are active or unresolved as of the reporting start date"
+   },
+   {
+     "id": "E11",
+     "name": "Trade-Level Derivatives",
+     "type": "instrument",
+     "description": "Individual derivative transactions"
+   },
+   {
+     "id": "E12",
+     "name": "Position-Level Derivatives",
+     "type": "instrument",
+     "description": "Aggregated derivative positions, potentially comprising multiple trades"
+   },
+   {
+     "id": "E13",
+     "name": "Compliance Obligation",
+     "type": "obligation",
+     "description": "Requirement to update outstanding derivatives within 180 days using specified report types"
+   }
+ ],
+ "relationships": [
+   {
+     "subject_id": "E1",
+     "verb": "must comply with",
+     "object_id": "E2",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E1",
+     "verb": "must comply with",
+     "object_id": "E3",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E2",
+     "verb": "defines requirements for",
+     "object_id": "E4",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E3",
+     "verb": "implements requirements for",
+     "object_id": "E4",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E1",
+     "verb": "must submit",
+     "object_id": "E7",
+     "confidence_score": 0.9
+   },
+   {
+     "subject_id": "E1",
+     "verb": "must submit",
+     "object_id": "E8",
+     "confidence_score": 0.9
+   },
+   {
+     "subject_id": "E1",
+     "verb": "must submit",
+     "object_id": "E9",
+     "confidence_score": 0.9
+   },
+   {
+     "subject_id": "E7",
+     "verb": "updates",
+     "object_id": "E10",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E8",
+     "verb": "modifies",
+     "object_id": "E4",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E9",
+     "verb": "corrects",
+     "object_id": "E4",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E11",
+     "verb": "can be aggregated into",
+     "object_id": "E12",
+     "confidence_score": 0.8
+   },
+   {
+     "subject_id": "E6",
+     "verb": "defines timeframe for updating",
+     "object_id": "E10",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E1",
+     "verb": "is subject to",
+     "object_id": "E13",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E13",
+     "verb": "requires compliance with",
+     "object_id": "E6",
+     "confidence_score": 1.0
+   },
+   {
+     "subject_id": "E5",
+     "verb": "triggers",
+     "object_id": "E6",
+     "confidence_score": 0.9
+   }
+ ]
+}
