@@ -1,121 +1,261 @@
 {
-  "summary": "This excerpt introduces EMIR-related guidelines that apply to financial counterparties, non-financial counterparties, trade repositories (TRs), and competent authorities. The document outlines the scope of these guidelines and defines the relevant entities as per Articles 2(2), 2(8), and 2(9) of EMIR. It also includes a list of acronyms and definitions essential for interpreting regulatory documentation in the derivatives market.",
-  "key_points": [
-    "Guidelines apply to both financial and non-financial counterparties involved in derivatives, as well as to trade repositories and competent authorities.",
-    "Definitions for these entities are grounded in specific articles of EMIR: Articles 2(8), 2(9), and 2(2).",
-    "Trade repositories are responsible for storing data on derivative transactions.",
-    "The document includes a glossary of regulatory acronyms relevant to EMIR and financial reporting."
-  ],
-  "entities": [
+  "nodes": [
     {
-      "id": "E1",
-      "name": "Guidelines",
-      "type": "regulatory document",
-      "description": "Instructions and rules under EMIR applying to market participants and oversight bodies."
+      "id": "guidelines",
+      "label": "Guidelines",
+      "description": "Rules and instructions applicable to participants in the derivatives market.",
+      "type": "Document",
+      "themes": ["Scope of Guidelines"]
     },
     {
-      "id": "E2",
-      "name": "Financial Counterparties",
-      "type": "entity",
-      "description": "Entities like banks and investment firms defined in Article 2(8) EMIR, involved in derivatives."
+      "id": "financial_counterparties",
+      "label": "Financial Counterparties",
+      "description": "Entities involved in derivative transactions as defined by Article 2(8) of EMIR.",
+      "type": "Entity",
+      "themes": ["Scope of Guidelines"]
     },
     {
-      "id": "E3",
-      "name": "Non-Financial Counterparties",
-      "type": "entity",
-      "description": "Corporates and others defined in Article 2(9) EMIR, involved in derivatives."
+      "id": "non_financial_counterparties",
+      "label": "Non-Financial Counterparties",
+      "description": "Entities involved in derivative transactions as defined by Article 2(9) of EMIR.",
+      "type": "Entity",
+      "themes": ["Scope of Guidelines"]
     },
     {
-      "id": "E4",
-      "name": "Derivatives",
-      "type": "financial instrument",
-      "description": "Contracts whose value is derived from an underlying asset."
+      "id": "derivatives",
+      "label": "Derivatives",
+      "description": "Financial contracts whose value is derived from an underlying asset.",
+      "type": "Concept",
+      "themes": []
     },
     {
-      "id": "E5",
-      "name": "Trade Repositories (TRs)",
-      "type": "entity",
-      "description": "Entities defined in Article 2(2) EMIR that store derivative transaction records."
+      "id": "trade_repositories_trs",
+      "label": "Trade Repositories (TRs)",
+      "description": "Entities that centrally collect and maintain records of derivative transactions as defined by Article 2(2) of EMIR.",
+      "type": "Entity",
+      "themes": ["Scope of Guidelines"]
     },
     {
-      "id": "E6",
-      "name": "Competent Authorities",
-      "type": "regulatory body",
-      "description": "Supervisory bodies enforcing EMIR provisions."
+      "id": "competent_authorities",
+      "label": "Competent Authorities",
+      "description": "Regulatory bodies responsible for overseeing financial markets.",
+      "type": "Organization",
+      "themes": ["Scope of Guidelines"]
     },
     {
-      "id": "E7",
-      "name": "EMIR",
-      "type": "regulation",
-      "description": "European Market Infrastructure Regulation providing legal framework for derivatives reporting."
+      "id": "emir_european_market_infrastructure_regulation",
+      "label": "EMIR (European Market Infrastructure Regulation)",
+      "description": "The European regulation that provides the legal framework for these guidelines.",
+      "type": "Regulation",
+      "themes": ["Scope of Guidelines"]
+    },
+    {
+      "id": "eu",
+      "label": "EU",
+      "description": "European Union - regulatory jurisdiction for EMIR.",
+      "type": "Organization",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "firds",
+      "label": "FIRDS",
+      "description": "Financial Instruments Reference Data System.",
+      "type": "System",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "fsb",
+      "label": "FSB",
+      "description": "Financial Stability Board.",
+      "type": "Organization",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "iosco",
+      "label": "IOSCO",
+      "description": "International Organization of Securities Commissions.",
+      "type": "Organization",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "isin",
+      "label": "ISIN",
+      "description": "International Securities Identification Number.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "iso",
+      "label": "ISO",
+      "description": "International Organization for Standardization.",
+      "type": "Organization",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "its",
+      "label": "ITS",
+      "description": "Implementing Technical Standards.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "lei",
+      "label": "LEI",
+      "description": "Legal Entity Identifier.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "mic",
+      "label": "MIC",
+      "description": "Market Identifier Code.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "nca",
+      "label": "NCA",
+      "description": "National Competent Authority.",
+      "type": "Organization",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "oj",
+      "label": "OJ",
+      "description": "Official Journal of the European Union.",
+      "type": "Document",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "otc",
+      "label": "OTC",
+      "description": "Over-the-Counter.",
+      "type": "Concept",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "qa",
+      "label": "Q&A",
+      "description": "Questions and Answers.",
+      "type": "Document",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "rse",
+      "label": "RSE",
+      "description": "Regulated Securities Exchange.",
+      "type": "Entity",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "rts",
+      "label": "RTS",
+      "description": "Regulatory Technical Standards.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "swift",
+      "label": "SWIFT",
+      "description": "Society for Worldwide Interbank Financial Telecommunication.",
+      "type": "Organization",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "tr",
+      "label": "TR",
+      "description": "Trade Repository.",
+      "type": "Entity",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "uti",
+      "label": "UTI",
+      "description": "Unique Transaction Identifier.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "xml",
+      "label": "XML",
+      "description": "Extensible Markup Language.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
+    },
+    {
+      "id": "xsd",
+      "label": "XSD",
+      "description": "XML Schema Definition.",
+      "type": "Standard",
+      "themes": ["Acronyms and Definitions"]
     }
   ],
-  "relationships": [
+  "edges": [
     {
-      "subject_id": "E1",
-      "verb": "applies to",
-      "object_id": "E2",
-      "confidence_score": 1.0
+      "source": "guidelines",
+      "target": "financial_counterparties",
+      "label": "applies to",
+      "details": "The guidelines provide rules and instructions for financial counterparties involved in derivative transactions."
     },
     {
-      "subject_id": "E1",
-      "verb": "applies to",
-      "object_id": "E3",
-      "confidence_score": 1.0
+      "source": "guidelines",
+      "target": "non_financial_counterparties",
+      "label": "applies to",
+      "details": "The guidelines provide rules and instructions for non-financial counterparties involved in derivative transactions."
     },
     {
-      "subject_id": "E1",
-      "verb": "applies to",
-      "object_id": "E5",
-      "confidence_score": 1.0
+      "source": "guidelines",
+      "target": "trade_repositories_trs",
+      "label": "applies to",
+      "details": "The guidelines provide rules and instructions for trade repositories."
     },
     {
-      "subject_id": "E1",
-      "verb": "applies to",
-      "object_id": "E6",
-      "confidence_score": 1.0
+      "source": "guidelines",
+      "target": "competent_authorities",
+      "label": "applies to",
+      "details": "The guidelines provide instructions and framework for competent authorities in their oversight role."
     },
     {
-      "subject_id": "E7",
-      "verb": "defines",
-      "object_id": "E2",
-      "confidence_score": 1.0
+      "source": "emir_european_market_infrastructure_regulation",
+      "target": "financial_counterparties",
+      "label": "defines",
+      "details": "Article 2(8) of EMIR defines financial counterparties."
     },
     {
-      "subject_id": "E7",
-      "verb": "defines",
-      "object_id": "E3",
-      "confidence_score": 1.0
+      "source": "emir_european_market_infrastructure_regulation",
+      "target": "non_financial_counterparties",
+      "label": "defines",
+      "details": "Article 2(9) of EMIR defines non-financial counterparties."
     },
     {
-      "subject_id": "E7",
-      "verb": "defines",
-      "object_id": "E5",
-      "confidence_score": 1.0
+      "source": "emir_european_market_infrastructure_regulation",
+      "target": "trade_repositories_trs",
+      "label": "defines",
+      "details": "Article 2(2) of EMIR defines trade repositories."
     },
     {
-      "subject_id": "E2",
-      "verb": "engages in",
-      "object_id": "E4",
-      "confidence_score": 0.95
+      "source": "financial_counterparties",
+      "target": "derivatives",
+      "label": "engage in",
+      "details": ""
     },
     {
-      "subject_id": "E3",
-      "verb": "engages in",
-      "object_id": "E4",
-      "confidence_score": 0.95
+      "source": "non_financial_counterparties",
+      "target": "derivatives",
+      "label": "engage in",
+      "details": ""
     },
     {
-      "subject_id": "E5",
-      "verb": "stores data on",
-      "object_id": "E4",
-      "confidence_score": 0.95
+      "source": "trade_repositories_trs",
+      "target": "derivatives",
+      "label": "store data on",
+      "details": ""
     },
     {
-      "subject_id": "E6",
-      "verb": "oversees/enforces",
-      "object_id": "E7",
-      "confidence_score": 0.95
+      "source": "competent_authorities",
+      "target": "emir_european_market_infrastructure_regulation",
+      "label": "oversee/enforce",
+      "details": ""
     }
   ]
 }
