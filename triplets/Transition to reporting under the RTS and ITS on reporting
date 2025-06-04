@@ -1,0 +1,148 @@
+{
+  "summary": "These ESMA guidelines, effective from April 29, 2024, clarify and standardize the requirements for derivatives reporting under EMIR to improve systemic risk monitoring and data quality.",
+  "key_points": [
+    "Guidelines issued by ESMA provide clarifications on derivatives reporting under EMIR.",
+    "Standardization of reporting is required across counterparties, trade repositories, and authorities.",
+    "Counterparties must report derivative transactions to trade repositories.",
+    "Trade repositories are responsible for constructing Trade State Reports and providing data to authorities.",
+    "The guidelines define conditions for intragroup derivative exemptions.",
+    "The process of delegating reporting responsibilities is clarified in the guidelines.",
+    "Improved data quality is a central objective to support effective regulatory oversight."
+  ],
+  "entities": [
+    {
+      "id": "E1",
+      "name": "European Market Infrastructure Regulation",
+      "type": "regulation",
+      "description": "The overarching regulation governing derivatives reporting in the EU."
+    },
+    {
+      "id": "E2",
+      "name": "European Securities and Markets Authority",
+      "type": "organization",
+      "description": "The regulatory authority that issued the guidelines under EMIR."
+    },
+    {
+      "id": "E3",
+      "name": "Guidelines",
+      "type": "regulation",
+      "description": "Clarifying document based on EMIR that standardizes reporting rules starting April 29, 2024."
+    },
+    {
+      "id": "E4",
+      "name": "Derivatives Reporting",
+      "type": "process",
+      "description": "The process of reporting derivative trades to trade repositories for regulatory purposes."
+    },
+    {
+      "id": "E5",
+      "name": "Counterparties",
+      "type": "organization",
+      "description": "Entities entering derivative transactions and responsible for submitting reports."
+    },
+    {
+      "id": "E6",
+      "name": "Trade Repositories",
+      "type": "organization",
+      "description": "Entities responsible for collecting, maintaining, and reconciling derivatives data."
+    },
+    {
+      "id": "E7",
+      "name": "Authorities",
+      "type": "organization",
+      "description": "Regulatory bodies that receive and utilize derivatives data for oversight purposes."
+    },
+    {
+      "id": "E8",
+      "name": "Systemic Risk",
+      "type": "asset",
+      "description": "Risk of a collapse in the financial system that effective derivatives reporting aims to mitigate."
+    },
+    {
+      "id": "E9",
+      "name": "Data Quality",
+      "type": "asset",
+      "description": "The accuracy, completeness, and reliability of reported derivatives data."
+    },
+    {
+      "id": "E10",
+      "name": "Trade State Report",
+      "type": "instrument",
+      "description": "A reconciliation tool prepared by trade repositories to track the state of trades."
+    },
+    {
+      "id": "E11",
+      "name": "Intragroup Derivatives Exemption",
+      "type": "obligation",
+      "description": "An exemption from reporting requirements for certain intragroup derivative trades."
+    },
+    {
+      "id": "E12",
+      "name": "Delegation of Reporting",
+      "type": "process",
+      "description": "A procedure allowing counterparties to assign reporting obligations to other entities."
+    }
+  ],
+  "relationships": [
+    {
+      "subject_id": "E2",
+      "verb": "issues",
+      "object_id": "E3",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E3",
+      "verb": "clarifies",
+      "object_id": "E1",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E1",
+      "verb": "regulates",
+      "object_id": "E4",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E5",
+      "verb": "report to",
+      "object_id": "E6",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E6",
+      "verb": "provide data to",
+      "object_id": "E7",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E4",
+      "verb": "mitigates",
+      "object_id": "E8",
+      "confidence_score": 0.9
+    },
+    {
+      "subject_id": "E3",
+      "verb": "addresses",
+      "object_id": "E9",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E6",
+      "verb": "construct",
+      "object_id": "E10",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E3",
+      "verb": "defines",
+      "object_id": "E11",
+      "confidence_score": 0.95
+    },
+    {
+      "subject_id": "E3",
+      "verb": "clarifies",
+      "object_id": "E12",
+      "confidence_score": 0.95
+    }
+  ]
+}
