@@ -1,0 +1,146 @@
+{
+  "summary": "This document outlines the regulatory reporting requirements under EMIR and SFTR for derivatives, including those based on crypto-assets. It clarifies which instruments and counterparties are subject to or exempt from reporting, the role of MiFID in classification, and special cases like total return swaps, complex contracts, and intragroup transactions.",
+  "key_points": [
+    "EMIR requires the reporting of most derivative contracts, including those involving crypto-assets if classified as financial instruments under MiFID.",
+    "SFTR regulates specific securities financing transactions, including some total return swaps.",
+    "Crypto-assets can underlie derivatives, which may or may not be reportable depending on classification under MiFID.",
+    "Certain transactions, like embedded derivatives and securitized products, are exempt from EMIR reporting.",
+    "Both financial (FC), non-financial (NFC), and central counterparties (CCPs) have defined reporting obligations under EMIR, though intragroup trades may be exempt."
+  ],
+  "entities": [
+    {
+      "id": "E1",
+      "name": "Derivatives",
+      "type": "financial instrument",
+      "description": "Contracts that derive value from underlying assets and are subject to EMIR reporting."
+    },
+    {
+      "id": "E2",
+      "name": "Crypto-Assets",
+      "type": "digital asset",
+      "description": "Digital representations of value that can be used as underlying assets in derivatives."
+    },
+    {
+      "id": "E3",
+      "name": "EMIR",
+      "type": "regulation",
+      "description": "European Market Infrastructure Regulation governing derivatives reporting and risk mitigation."
+    },
+    {
+      "id": "E4",
+      "name": "SFTR",
+      "type": "regulation",
+      "description": "Regulation covering securities financing transactions, including transparency rules for TRS."
+    },
+    {
+      "id": "E5",
+      "name": "MiFID",
+      "type": "directive",
+      "description": "Directive determining whether a crypto-asset derivative qualifies as a financial instrument."
+    },
+    {
+      "id": "E6",
+      "name": "Total Return Swaps (TRS)",
+      "type": "derivative",
+      "description": "Contracts where the total return of a reference asset is exchanged between parties."
+    },
+    {
+      "id": "E7",
+      "name": "Complex Contracts",
+      "type": "derivative",
+      "description": "Contracts such as options on futures or multi-leg strategies requiring nuanced reporting."
+    },
+    {
+      "id": "E8",
+      "name": "Intragroup Derivatives",
+      "type": "transaction",
+      "description": "Derivatives traded between entities in the same corporate group, potentially exempt from EMIR."
+    },
+    {
+      "id": "E9",
+      "name": "Financial Counterparties (FC)",
+      "type": "entity",
+      "description": "Financial institutions obligated to report under EMIR."
+    },
+    {
+      "id": "E10",
+      "name": "Non-Financial Counterparties (NFC)",
+      "type": "entity",
+      "description": "Non-financial entities that must report derivatives under certain thresholds."
+    },
+    {
+      "id": "E11",
+      "name": "CCPs",
+      "type": "entity",
+      "description": "Central counterparties that act as intermediaries and are obligated reporters under EMIR."
+    },
+    {
+      "id": "E12",
+      "name": "Non-Reportable Transactions",
+      "type": "exemption category",
+      "description": "Instruments like embedded or securitized derivatives excluded from EMIR reporting."
+    }
+  ],
+  "relationships": [
+    {
+      "subject_id": "E3",
+      "verb": "regulates",
+      "object_id": "E1",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E4",
+      "verb": "regulates",
+      "object_id": "E6",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E5",
+      "verb": "classifies",
+      "object_id": "E2",
+      "confidence_score": 0.95
+    },
+    {
+      "subject_id": "E2",
+      "verb": "underlies",
+      "object_id": "E1",
+      "confidence_score": 0.9
+    },
+    {
+      "subject_id": "E7",
+      "verb": "composed of",
+      "object_id": "E1",
+      "confidence_score": 0.9
+    },
+    {
+      "subject_id": "E3",
+      "verb": "exempts",
+      "object_id": "E12",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E3",
+      "verb": "obligates reporting by",
+      "object_id": "E9",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E3",
+      "verb": "obligates reporting by",
+      "object_id": "E10",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E3",
+      "verb": "obligates reporting by",
+      "object_id": "E11",
+      "confidence_score": 1.0
+    },
+    {
+      "subject_id": "E3",
+      "verb": "provides exemption for",
+      "object_id": "E8",
+      "confidence_score": 1.0
+    }
+  ]
+}
