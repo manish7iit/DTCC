@@ -1,0 +1,75 @@
+"""
+
+**Objective:** Convert the previously generated structured document summary into a graph representation. The output should be a JSON object containing lists of nodes and edges, suitable for programmatic use in graph visualization or analysis tools.
+
+**Input:**
+You will use the structured summary generated from the previous prompt. This summary includes:
+1.  Overall Document Summary
+2.  Key Entities/Concepts (Nodes) with descriptions
+3.  Key Relationships/Interactions (Edges) with source, target, and nature of relationship
+4.  Main Themes/Information Clusters with summaries and central entities
+
+**Instructions:**
+
+Based on the provided structured summary, generate a JSON object with two main keys: `"nodes"` and `"edges"`.
+
+**1. Nodes:**
+   *   The `"nodes"` value should be an array of objects.
+   *   Each node object should represent an entity or concept identified in the "Key Entities/Concepts" section of the input summary.
+   *   **Node Object Attributes:**
+        *   `"id"`: (String) A unique, machine-readable identifier for the node. Generate this by taking the entity/concept name, converting it to lowercase, and replacing spaces with underscores (e.g., "ESMA Report 2023" becomes "esma_report_2023"). Ensure these IDs are unique.
+        *   `"label"`: (String) The original human-readable name of the entity/concept (e.g., "ESMA Report 2023").
+        *   `"description"`: (String) The description of the entity/concept provided in the input summary.
+        *   `"type"`: (String) (Optional, but preferred) Attempt to categorize the entity (e.g., "Document", "Regulation", "Organization", "Person", "Concept", "Process"). If unsure, use a generic type like "Entity" or omit.
+        *   `"themes"`: (Array of Strings) A list of the titles of the "Main Themes/Information Clusters" from the input summary where this entity/concept was listed as central.
+
+**2. Edges:**
+   *   The `"edges"` value should be an array of objects.
+   *   Each edge object should represent a relationship or interaction identified in the "Key Relationships/Interactions" section of the input summary.
+   *   **Edge Object Attributes:**
+        *   `"source"`: (String) The `"id"` of the source node for this relationship (must match one of the generated node IDs).
+        *   `"target"`: (String) The `"id"` of the target node for this relationship (must match one of the generated node IDs).
+        *   `"label"`: (String) The nature of the relationship as described in the input summary (e.g., "influences", "proposes changes to", "is part of").
+        *   `"details"`: (String) (Optional) Any additional context or details provided for the relationship in the input summary.
+
+**Processing Guidelines:**
+*   Carefully map the information from the "Key Entities/Concepts" section of the input summary to the node objects.
+*   Carefully map the information from the "Key Relationships/Interactions" section of the input summary to the edge objects, ensuring you use the generated node `"id"` values for `"source"` and `"target"`.
+*   Use the "Main Themes/Information Clusters" section to populate the `"themes"` attribute for each node.
+*   Ensure consistency between the node IDs generated and those used in the source/target fields of the edges.
+*   The final output should be a single JSON object.
+
+**Example Snippet of Expected JSON Output:**
+```json
+{
+  "nodes": [
+    {
+      "id": "esma_report_2023",
+      "label": "ESMA Report 2023",
+      "description": "The main document discussing regulatory changes.",
+      "type": "Document",
+      "themes": ["Regulatory Updates", "Reporting Standards"]
+    },
+    {
+      "id": "emir_regulation",
+      "label": "EMIR Regulation",
+      "description": "A key financial regulation being updated.",
+      "type": "Regulation",
+      "themes": ["Regulatory Updates"]
+    }
+    // ... more nodes
+  ],
+  "edges": [
+    {
+      "source": "esma_report_2023",
+      "target": "emir_regulation",
+      "label": "proposes changes to",
+      "details": "The report outlines new reporting standards for EMIR."
+    }
+    // ... more edges
+  ]
+}
+
+"""
+
+
