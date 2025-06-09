@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from tabulate import tabulate
 from sqlalchemy import DateTime
-import datetime
+from datetime import datetime, timezone
 
 Base = declarative_base()
 engine = create_engine('sqlite:///DB.db', echo=True)
@@ -17,7 +17,7 @@ class Summary(Base):
     name = Column(String)
     path = Column(String)
     regulations = relationship('Regulations', back_populates='summary')
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at =  Column(DateTime(timezone=True), default=datetime.now)
 
 
 class Regulations(Base):
@@ -25,8 +25,8 @@ class Regulations(Base):
     upload_id = Column(Integer, primary_key=True)
     name_of_regulation = Column(String, unique=True)
     latest_version = Column(Integer, ForeignKey('Summaries.id'))
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
+    created_at =  Column(DateTime(timezone=True), default=datetime.now)
+    updated_at = Column( DateTime(timezone=True), default=datetime.now , onupdate=datetime.now)
     summary = relationship('Summary', back_populates='regulations')
 
 
@@ -35,7 +35,7 @@ class Graph(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     path = Column(String)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    created_at =  Column(DateTime(timezone=True), default=datetime.now)
 
 
 Base.metadata.create_all(engine)
@@ -95,3 +95,4 @@ def select_all(name_of_regulation):
     headers = ["Summary Path", "Graph Path"]
     print(tabulate(table_data, headers=headers, tablefmt="grid"))
 
+insert("GDPR2","A","a")
